@@ -1,0 +1,19 @@
+[    7353ms] [WARNING] A preload for 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin attribute. @ https://mimoo-zeta.vercel.app/_next/static/chunks/app/page-66766a26d2c1e64d.js:0
+[   24122ms] [LOG] [$updateSource] called! 
+src: /models/strawberry-swirl-sundae.glb
+extraUrls: 
+loaded: false @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   24122ms] [LOG] [$updateSource] BAILING OUT EARLY! @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   24123ms] [LOG] [$updateSource] called! 
+src: /models/strawberry-swirl-sundae.glb
+extraUrls: 
+loaded: false @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   24123ms] [LOG] [$updateSource] BAILING OUT EARLY! @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   24366ms] [LOG] IntersectionObserver fired! isIntersecting: true @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   24366ms] [LOG] [$updateSource] called! 
+src: /models/strawberry-swirl-sundae.glb
+extraUrls: 
+loaded: false @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   28600ms] [WARNING] The resource https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://mimoo-zeta.vercel.app/:0
+[   38122ms] [WARNING] rAF timed out in updateSource @ https://unpkg.com/@google/model-viewer@4.3.1/dist/model-viewer.min.js:1035
+[   38123ms] [WARNING] The resource https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://mimoo-zeta.vercel.app/:0

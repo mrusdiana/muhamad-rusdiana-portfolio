@@ -1,0 +1,99 @@
+- generic [active] [ref=f2e1]:
+  - main [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "All projects" [ref=f2e4] [cursor=pointer]:
+        - /url: /#projects
+      - link "MR." [ref=f2e7] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]: Case study / 05
+        - button "Switch to dark mode" [ref=f2e10] [cursor=pointer]
+    - region [ref=f2e13]:
+      - generic [ref=f2e14]:
+        - generic [ref=f2e15]: Selected work / 2026
+        - generic [ref=f2e16]: Social Media Mobile App
+      - heading "Hacktivo." [level=1] [ref=f2e17]
+      - generic [ref=f2e18]:
+        - paragraph [ref=f2e19]: An Instagram-inspired mobile application with social feeds and a GraphQL data layer, supported by Redis caching.
+        - link "Visit live project" [ref=f2e20] [cursor=pointer]:
+          - /url: https://expo.dev/preview/update?message=Upgrade+to+Expo+SDK+57&updateRuntimeVersion=1.0.0&createdAt=2026-09-21T06%3A09%3A26.830Z&slug=exp&projectId=1c8ec54d-a0bf-46b3-b744-8fdd3c00739f&group=b7737b39-4dda-4c2e-b7c4-6f9e667c060c
+    - region "Hacktivo screenshot gallery" [ref=f2e24]:
+      - generic [ref=f2e25]:
+        - generic [ref=f2e26]: Project screenshots
+        - generic [ref=f2e27]: 07 screens
+      - generic [ref=f2e28]:
+        - button "Enlarge Hacktivo screenshot 1" [ref=f2e29] [cursor=pointer]:
+          - img "Hacktivo screenshot 1" [ref=f2e30]
+        - button "Enlarge Hacktivo screenshot 2" [ref=f2e31] [cursor=pointer]:
+          - img "Hacktivo screenshot 2" [ref=f2e32]
+        - button "Enlarge Hacktivo screenshot 3" [ref=f2e33] [cursor=pointer]:
+          - img "Hacktivo screenshot 3" [ref=f2e34]
+        - button "Enlarge Hacktivo screenshot 4" [ref=f2e35] [cursor=pointer]:
+          - img "Hacktivo screenshot 4" [ref=f2e36]
+        - button "Show 2 more Hacktivo screenshots" [ref=f2e37] [cursor=pointer]:
+          - img "Hacktivo screenshot 5" [ref=f2e38]
+          - generic [ref=f2e39]:
+            - text: "+2"
+            - generic [ref=f2e40]: View more
+    - region [ref=f2e41]:
+      - generic [ref=f2e42]:
+        - generic [ref=f2e43]: "01"
+        - text: Overview
+      - generic [ref=f2e44]:
+        - heading "From concept to product." [level=2] [ref=f2e45]: From conceptto product.
+        - paragraph [ref=f2e46]: Hacktivo explores the familiar rhythm of a social feed in a mobile-first app. It brings an Instagram-inspired interface to React Native and Expo, with GraphQL as the data layer and Redis for caching.
+        - paragraph [ref=f2e47]: Apollo Client connects the mobile experience to the GraphQL service, while Redis supports repeated data reads behind the social experience.
+    - region [ref=f2e48]:
+      - generic [ref=f2e49]:
+        - generic [ref=f2e50]: "02"
+        - text: What it does
+      - generic [ref=f2e51]:
+        - heading "The work, in detail." [level=2] [ref=f2e52]
+        - generic [ref=f2e53]:
+          - article [ref=f2e54]:
+            - generic [ref=f2e55]: "01"
+            - heading "Mobile-first interface" [level=3] [ref=f2e56]
+            - paragraph [ref=f2e57]: React Native and Expo provide the app shell and social-feed presentation.
+          - article [ref=f2e58]:
+            - generic [ref=f2e59]: "02"
+            - heading "Structured data access" [level=3] [ref=f2e60]
+            - paragraph [ref=f2e61]: GraphQL and Apollo Client organize the app's requests around the data each screen needs.
+          - article [ref=f2e62]:
+            - generic [ref=f2e63]: "03"
+            - heading "Faster repeat reads" [level=3] [ref=f2e64]
+            - paragraph [ref=f2e65]: Redis supports caching behind the social experience.
+    - region [ref=f2e66]:
+      - generic [ref=f2e67]:
+        - generic [ref=f2e68]: "03"
+        - text: Technology
+      - generic [ref=f2e69]:
+        - heading "Built with." [level=2] [ref=f2e70]
+        - generic [ref=f2e71]:
+          - generic [ref=f2e72]: React Native
+          - generic [ref=f2e73]: Expo
+          - generic [ref=f2e74]: Apollo Client
+          - generic [ref=f2e75]: GraphQL
+          - generic [ref=f2e76]: Redis
+    - generic [ref=f2e77]:
+      - generic [ref=f2e78]:
+        - generic [ref=f2e79]: Next project / 01
+        - link "Dolan" [ref=f2e80] [cursor=pointer]:
+          - /url: /projects/dolan
+      - link "Back to all projects" [ref=f2e83] [cursor=pointer]:
+        - /url: /#projects
+  - generic:
+    - generic [aria-hidden]:
+      - link:
+        - /url: "#top"
+        - generic: Scroll to top
+      - link:
+        - /url: https://linkedin.com/in/muhamad-rusdiana-99054b428
+        - generic: LinkedIn
+      - link:
+        - /url: mailto:muhamadrusdiana452@gmail.com
+        - generic: Email
+      - link:
+        - /url: https://github.com/mrusdiana
+        - generic: GitHub
+    - button "Open quick links" [ref=f2e87] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=f2e95] [cursor=pointer]

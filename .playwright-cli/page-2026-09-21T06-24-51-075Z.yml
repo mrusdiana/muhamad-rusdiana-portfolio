@@ -1,0 +1,635 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Muhamad Rusdiana home" [ref=f1e4] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f1e10]: Muhamad Rusdiana.
+      - navigation "Primary navigation" [ref=f1e11]:
+        - link "About" [ref=f1e12] [cursor=pointer]:
+          - /url: "#about"
+        - link "Skills" [ref=f1e13] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Projects" [ref=f1e14] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Experience" [ref=f1e15] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Education" [ref=f1e16] [cursor=pointer]:
+          - /url: "#education"
+        - link "Certificates" [ref=f1e17] [cursor=pointer]:
+          - /url: "#certificates"
+        - link "Contact" [ref=f1e18] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f1e19]:
+        - button "Switch to dark mode" [ref=f1e20] [cursor=pointer]
+        - button "Menu" [ref=f1e23] [cursor=pointer]
+    - generic [ref=f1e26]:
+      - generic [aria-hidden]:
+        - generic: DEV
+      - region [ref=f1e27]:
+        - generic [ref=f1e28]: Available for opportunities
+        - generic [ref=f1e30]:
+          - paragraph [ref=f1e31]: Bekasi, Indonesia
+          - heading "Muhamad Rusdiana" [level=1] [ref=f1e35]: MuhamadRusdiana
+        - generic [ref=f1e36]:
+          - generic [ref=f1e37]: Specializing in
+          - strong [ref=f1e38]: Fullstack
+          - strong [ref=f1e39]: Developer
+          - generic [ref=f1e40]: 01 / 01
+        - generic [ref=f1e41]:
+          - link "GitHub profile" [ref=f1e42] [cursor=pointer]:
+            - /url: https://github.com/mrusdiana
+            - generic [aria-hidden] [ref=f1e43]: GH
+          - link "LinkedIn profile" [ref=f1e44] [cursor=pointer]:
+            - /url: https://linkedin.com/in/muhamad-rusdiana-99054b428
+            - generic [aria-hidden] [ref=f1e45]: in
+          - link "Let's connect" [ref=f1e46] [cursor=pointer]:
+            - /url: "#contact"
+    - region [ref=f1e50]:
+      - text: ABOUT
+      - generic [ref=f1e51]:
+        - generic [ref=f1e52]:
+          - img "Muhamad Rusdiana in a casual half-body portrait" [ref=f1e54]
+          - generic [aria-hidden] [ref=f1e55]:
+            - generic [ref=f1e56]: MR / 01
+            - strong [ref=f1e57]: ABOUT
+          - generic [ref=f1e59]:
+            - generic [ref=f1e60]:
+              - strong [ref=f1e61]: Fullstack Developer
+              - generic [ref=f1e62]: Muhamad Rusdiana
+            - generic [ref=f1e63]:
+              - generic [ref=f1e64]:
+                - generic [ref=f1e65]: I BUILD
+                - strong [ref=f1e66]: Interfaces & APIs
+              - generic [ref=f1e67]:
+                - generic [ref=f1e68]: MY APPROACH
+                - strong [ref=f1e69]: Reliable, user-focused work
+        - generic [ref=f1e70]:
+          - paragraph [ref=f1e71]: About me
+          - heading [level=2] [ref=f1e72]:
+            - text: I Build Reliable, User-Focused Applications.
+            - emphasis [ref=f1e73]: From Intuitive Interfaces to Dependable Backends.
+          - paragraph [ref=f1e74]: I'm a Fullstack JavaScript Developer experienced in building modern web applications, from responsive interfaces and APIs to databases and AI integrations. My internship in Japan strengthened my discipline, adaptability, and problem-solving skills.
+          - generic "Personal highlights" [ref=f1e75]:
+            - article [ref=f1e76]:
+              - generic [ref=f1e80]:
+                - strong [ref=f1e81]: 480 Hours
+                - generic [ref=f1e82]: AI Fullstack JavaScript Bootcamp
+            - article [ref=f1e83]:
+              - generic [ref=f1e88]:
+                - strong [ref=f1e89]: 5 Projects
+                - generic [ref=f1e90]: Web and mobile applications
+            - article [ref=f1e91]:
+              - generic [ref=f1e96]:
+                - strong [ref=f1e97]: Nearly 3 Years
+                - generic [ref=f1e98]: Technical internship in Japan
+              - generic [ref=f1e99]: JLPT N2
+          - button "Download CV Coming soon" [disabled] [ref=f1e100]:
+            - text: Download CV
+            - generic [ref=f1e101]: Coming soon
+    - region [ref=f1e102]:
+      - text: STACK
+      - generic [ref=f1e103]:
+        - generic [ref=f1e104]:
+          - generic [ref=f1e105]:
+            - generic [ref=f1e106]: "02"
+            - text: TECHNICAL SKILLS
+          - heading [level=2] [ref=f1e107]:
+            - text: The tools behind
+            - emphasis [ref=f1e108]: the work.
+          - paragraph [ref=f1e109]: From the interface to the database, these are the technologies I use across my projects.
+        - generic [ref=f1e110]:
+          - group "Filter technologies" [ref=f1e111]:
+            - paragraph [ref=f1e112]:
+              - text: Tech index
+              - generic [ref=f1e113]: 46 technologies
+            - button "All" [pressed] [ref=f1e114] [cursor=pointer]
+            - button "Frontend & Mobile" [ref=f1e115] [cursor=pointer]
+            - button "Backend & APIs" [ref=f1e116] [cursor=pointer]
+            - button "Data & Storage" [ref=f1e117] [cursor=pointer]
+            - button "Client & Integrations" [ref=f1e118] [cursor=pointer]
+            - button "Cloud & Deployment" [ref=f1e119] [cursor=pointer]
+            - button "Workflow & Testing" [ref=f1e120] [cursor=pointer]
+          - generic [ref=f1e121]:
+            - generic [ref=f1e122]:
+              - article [ref=f1e123]:
+                - strong [ref=f1e127]: TypeScript
+                - generic [ref=f1e128]: Frontend & Mobile
+              - article [ref=f1e129]:
+                - strong [ref=f1e133]: JavaScript
+                - generic [ref=f1e134]: Frontend & Mobile
+              - article [ref=f1e135]:
+                - strong [ref=f1e139]: React
+                - generic [ref=f1e140]: Frontend & Mobile
+              - article [ref=f1e141]:
+                - strong [ref=f1e145]: Next.js
+                - generic [ref=f1e146]: Frontend & Mobile
+              - article [ref=f1e147]:
+                - strong [ref=f1e151]: Node.js
+                - generic [ref=f1e152]: Backend & APIs
+              - article [ref=f1e153]:
+                - strong [ref=f1e157]: PostgreSQL
+                - generic [ref=f1e158]: Data & Storage
+              - article [ref=f1e159]:
+                - strong [ref=f1e163]: Express
+                - generic [ref=f1e164]: Backend & APIs
+              - article [ref=f1e165]:
+                - strong [ref=f1e169]: Tailwind CSS
+                - generic [ref=f1e170]: Frontend & Mobile
+              - article [ref=f1e171]:
+                - strong [ref=f1e175]: REST API
+                - generic [ref=f1e176]: Backend & APIs
+              - article [ref=f1e177]:
+                - strong [ref=f1e181]: Git
+                - generic [ref=f1e182]: Workflow & Testing
+              - article [ref=f1e183]:
+                - strong [ref=f1e187]: AWS EC2
+                - generic [ref=f1e188]: Cloud & Deployment
+              - article [ref=f1e189]:
+                - strong [ref=f1e193]: MongoDB
+                - generic [ref=f1e194]: Data & Storage
+              - article [ref=f1e195]:
+                - strong [ref=f1e199]: HTML
+                - generic [ref=f1e200]: Frontend & Mobile
+              - article [ref=f1e201]:
+                - strong [ref=f1e205]: CSS
+                - generic [ref=f1e206]: Frontend & Mobile
+              - article [ref=f1e207]:
+                - strong [ref=f1e211]: Vite
+                - generic [ref=f1e212]: Workflow & Testing
+              - article [ref=f1e213]:
+                - strong [ref=f1e217]: Zod
+                - generic [ref=f1e218]: Backend & APIs
+              - article [ref=f1e219]:
+                - strong [ref=f1e223]: Redis
+                - generic [ref=f1e224]: Data & Storage
+              - article [ref=f1e225]:
+                - strong [ref=f1e229]: React Native
+                - generic [ref=f1e230]: Frontend & Mobile
+              - article [ref=f1e231]:
+                - strong [ref=f1e235]: Expo
+                - generic [ref=f1e236]: Frontend & Mobile
+              - article [ref=f1e237]:
+                - strong [ref=f1e241]: GraphQL
+                - generic [ref=f1e242]: Backend & APIs
+              - article [ref=f1e243]:
+                - strong [ref=f1e247]: Socket.IO
+                - generic [ref=f1e248]: Backend & APIs
+              - article [ref=f1e249]:
+                - strong [ref=f1e253]: GitHub
+                - generic [ref=f1e254]: Workflow & Testing
+              - article [ref=f1e255]:
+                - strong [ref=f1e259]: Vercel
+                - generic [ref=f1e260]: Cloud & Deployment
+              - article [ref=f1e261]:
+                - strong [ref=f1e265]: Gemini API
+                - generic [ref=f1e266]: Client & Integrations
+            - button "Show more" [ref=f1e267] [cursor=pointer]
+    - region [ref=f1e271]:
+      - text: PROJECTS
+      - generic [ref=f1e273]:
+        - generic [ref=f1e274]:
+          - generic [ref=f1e275]: SELECTED WORK
+          - generic [ref=f1e277]: DESIGN, CODE & SHIP
+          - generic [ref=f1e279]: SELECTED WORK
+          - generic [ref=f1e281]: DESIGN, CODE & SHIP
+        - generic [ref=f1e283]:
+          - generic [ref=f1e284]: SELECTED WORK
+          - generic [ref=f1e286]: DESIGN, CODE & SHIP
+          - generic [ref=f1e288]: SELECTED WORK
+          - generic [ref=f1e290]: DESIGN, CODE & SHIP
+      - generic [ref=f1e293]:
+        - generic [ref=f1e294]:
+          - generic [ref=f1e295]:
+            - generic [ref=f1e296]: "03"
+            - text: Selected Projects
+          - paragraph [ref=f1e297]: Featured fullstack projects
+          - heading [level=2] [ref=f1e298]:
+            - text: Projects I have built.
+            - emphasis [ref=f1e299]: Explore them live.
+        - paragraph [ref=f1e300]: Five web and mobile applications covering travel, community reuse, entertainment, commerce, and social media.
+      - navigation [aria-hidden]:
+        - link:
+          - /url: "#skills"
+          - generic: Tech stack
+        - link:
+          - /url: "#experience"
+          - generic: Skip to experience
+      - generic [ref=f1e303]:
+        - article [ref=f1e305]:
+          - generic [ref=f1e306]:
+            - img "Dolan application homepage" [ref=f1e307]
+            - generic [ref=f1e308]: Project 01 / 05
+            - generic [ref=f1e309]:
+              - button "Play Dolan demo video" [ref=f1e310] [cursor=pointer]: View demo
+              - link "Open Dolan live project" [ref=f1e313] [cursor=pointer]:
+                - /url: https://app.dolanan.my.id/
+                - text: View live
+          - generic [ref=f1e317]:
+            - generic [ref=f1e318]:
+              - generic [ref=f1e319]: Selected work / 01
+              - generic [ref=f1e320]: "2026"
+            - generic [ref=f1e321]: Social Travel & Trip Companion
+            - heading "Dolan" [level=3] [ref=f1e322]
+            - paragraph [ref=f1e323]: A mobile-first travel platform for discovering destinations, planning trips and budgets, and connecting with compatible travel companions.
+            - generic [ref=f1e324]:
+              - generic "Dolan technology stack" [ref=f1e325]:
+                - img "Next.js" [ref=f1e326]
+                - img "TypeScript" [ref=f1e329]
+                - img "Express" [ref=f1e332]
+                - img "PostgreSQL" [ref=f1e335]
+                - img "Socket.IO" [ref=f1e338]
+              - link "View Dolan detail" [ref=f1e341] [cursor=pointer]:
+                - /url: /projects/dolan
+                - text: View detail
+        - article [ref=f1e346]:
+          - generic [ref=f1e347]:
+            - img "BeryBox application homepage" [ref=f1e348]
+            - generic [ref=f1e349]: Project 02 / 05
+            - generic [ref=f1e350]:
+              - button "Play BeryBox demo video" [ref=f1e351] [cursor=pointer]: View demo
+              - link "Open BeryBox live project" [ref=f1e354] [cursor=pointer]:
+                - /url: https://berybox.web.id/
+                - text: View live
+          - generic [ref=f1e358]:
+            - generic [ref=f1e359]:
+              - generic [ref=f1e360]: Selected work / 02
+              - generic [ref=f1e361]: "2026"
+            - generic [ref=f1e362]: Community Reuse Platform
+            - heading "BeryBox" [level=3] [ref=f1e363]
+            - paragraph [ref=f1e364]: A community platform that enables people and organizations to donate, claim, and barter usable goods nearby.
+            - generic [ref=f1e365]:
+              - generic "BeryBox technology stack" [ref=f1e366]:
+                - img "React" [ref=f1e367]
+                - img "Express" [ref=f1e370]
+                - img "PostgreSQL" [ref=f1e373]
+                - img "Socket.IO" [ref=f1e376]
+                - img "Gemini API" [ref=f1e379]
+              - link "View BeryBox detail" [ref=f1e382] [cursor=pointer]:
+                - /url: /projects/berybox
+                - text: View detail
+        - article [ref=f1e387]:
+          - generic [ref=f1e388]:
+            - img "RenAiFlix application homepage" [ref=f1e389]
+            - generic [ref=f1e390]: Project 03 / 05
+            - generic [ref=f1e391]:
+              - button "Play RenAiFlix demo video" [ref=f1e392] [cursor=pointer]: View demo
+              - link "Open RenAiFlix live project" [ref=f1e395] [cursor=pointer]:
+                - /url: https://renaiflix.my.id/
+                - text: View live
+          - generic [ref=f1e399]:
+            - generic [ref=f1e400]:
+              - generic [ref=f1e401]: Selected work / 03
+              - generic [ref=f1e402]: "2026"
+            - generic [ref=f1e403]: AI Movie Recommendation
+            - heading "RenAiFlix" [level=3] [ref=f1e404]
+            - paragraph [ref=f1e405]: An AI-powered movie platform helping couples and friends discover films through shared genre matching.
+            - generic [ref=f1e406]:
+              - generic "RenAiFlix technology stack" [ref=f1e407]:
+                - img "React" [ref=f1e408]
+                - img "Express" [ref=f1e411]
+                - img "PostgreSQL" [ref=f1e414]
+                - img "Gemini API" [ref=f1e417]
+                - img "Midtrans" [ref=f1e420]
+              - link "View RenAiFlix detail" [ref=f1e423] [cursor=pointer]:
+                - /url: /projects/renaiflix
+                - text: View detail
+        - article [ref=f1e428]:
+          - generic [ref=f1e429]:
+            - img "Mimoo application homepage" [ref=f1e430]
+            - generic [ref=f1e431]: Project 04 / 05
+            - generic [ref=f1e432]:
+              - button "Play Mimoo demo video" [ref=f1e433] [cursor=pointer]: View demo
+              - link "Open Mimoo live project" [ref=f1e436] [cursor=pointer]:
+                - /url: https://mimoo-zeta.vercel.app/
+                - text: View live
+          - generic [ref=f1e440]:
+            - generic [ref=f1e441]:
+              - generic [ref=f1e442]: Selected work / 04
+              - generic [ref=f1e443]: "2026"
+            - generic [ref=f1e444]: Catalog & Wishlist App
+            - heading "Mimoo" [level=3] [ref=f1e445]
+            - paragraph [ref=f1e446]: A responsive ice cream catalog with search, category filters, infinite scrolling, and personalized wishlists.
+            - generic [ref=f1e447]:
+              - generic "Mimoo technology stack" [ref=f1e448]:
+                - img "Next.js" [ref=f1e449]
+                - img "TypeScript" [ref=f1e452]
+                - img "MongoDB" [ref=f1e455]
+                - img "Zod" [ref=f1e458]
+                - img "Motion" [ref=f1e461]
+              - link "View Mimoo detail" [ref=f1e464] [cursor=pointer]:
+                - /url: /projects/mimoo
+                - text: View detail
+        - article [ref=f1e469]:
+          - generic [ref=f1e470]:
+            - img "Hacktivo login screen" [ref=f1e472]
+            - generic [ref=f1e474]: Project 05 / 05
+            - generic [ref=f1e475]: React Native · Expo
+            - generic [ref=f1e476]:
+              - button "Play Hacktivo demo video" [ref=f1e477] [cursor=pointer]: View demo
+              - link "Open Hacktivo live project" [ref=f1e480] [cursor=pointer]:
+                - /url: https://expo.dev/preview/update?message=Upgrade+to+Expo+SDK+57&updateRuntimeVersion=1.0.0&createdAt=2026-09-21T06%3A09%3A26.830Z&slug=exp&projectId=1c8ec54d-a0bf-46b3-b744-8fdd3c00739f&group=b7737b39-4dda-4c2e-b7c4-6f9e667c060c
+                - text: View live
+          - generic [ref=f1e484]:
+            - generic [ref=f1e485]:
+              - generic [ref=f1e486]: Selected work / 05
+              - generic [ref=f1e487]: "2026"
+            - generic [ref=f1e488]: Social Media Mobile App
+            - heading "Hacktivo" [level=3] [ref=f1e489]
+            - paragraph [ref=f1e490]: An Instagram-inspired mobile application with social feeds and a GraphQL data layer, supported by Redis caching.
+            - generic [ref=f1e491]:
+              - generic "Hacktivo technology stack" [ref=f1e492]:
+                - img "React Native" [ref=f1e493]
+                - img "Expo" [ref=f1e496]
+                - img "Apollo Client" [ref=f1e499]
+                - img "GraphQL" [ref=f1e502]
+                - img "Redis" [ref=f1e505]
+              - link "View Hacktivo detail" [ref=f1e508] [cursor=pointer]:
+                - /url: /projects/hacktivo
+                - text: View detail
+    - region [ref=f1e513]:
+      - text: "04"
+      - generic [ref=f1e515]:
+        - generic [ref=f1e516]:
+          - generic [ref=f1e517]:
+            - generic [ref=f1e518]: "04"
+            - text: Experience
+            - generic [ref=f1e519]: 経験
+          - paragraph [ref=f1e520]: Internship experience
+          - heading [level=2] [ref=f1e521]:
+            - text: Technical internship
+            - emphasis [ref=f1e522]: in Japan.
+          - paragraph [ref=f1e523]: My technical internship in Japan strengthened the discipline, adaptability, and practical problem-solving I now bring to software development.
+        - generic [ref=f1e524]:
+          - article [ref=f1e525]:
+            - generic [ref=f1e526]:
+              - generic [ref=f1e527]: Jun 2023 — Apr 2026
+              - heading "Shipbuilding Technical Intern" [level=3] [ref=f1e528]
+              - paragraph [ref=f1e529]: Technical Intern · Wakino Zousensho
+            - generic [ref=f1e530]:
+              - generic [aria-hidden] [ref=f1e531]: ●
+              - text: Kanagawa, Japan
+          - generic [ref=f1e532]:
+            - article [ref=f1e533]:
+              - generic [ref=f1e534]: "01"
+              - generic [ref=f1e539]:
+                - heading "Vessel Operations" [level=3] [ref=f1e540]
+                - paragraph [ref=f1e541]: Supported vessel hauling, positioning, maintenance, and exterior repainting through disciplined shipyard procedures.
+            - article [ref=f1e542]:
+              - generic [ref=f1e543]: "02"
+              - generic [ref=f1e547]:
+                - heading "FRP Fabrication" [level=3] [ref=f1e548]
+                - paragraph [ref=f1e549]: Fabricated and assembled FRP upper structures while working closely with a Japanese senior technician.
+            - article [ref=f1e550]:
+              - generic [ref=f1e551]: "03"
+              - generic [ref=f1e556]:
+                - heading "Trusted Repairs" [level=3] [ref=f1e557]
+                - paragraph [ref=f1e558]: Earned responsibility for complex vessel repairs and fabrication work from preparation through final installation.
+          - generic "Skills developed during the internship" [ref=f1e559]:
+            - generic [ref=f1e560]: Discipline
+            - generic [ref=f1e561]: Precision
+            - generic [ref=f1e562]: Problem Solving
+            - generic [ref=f1e563]: Adaptability
+            - generic [ref=f1e564]: Cross-cultural Teamwork
+    - region [ref=f1e565]:
+      - text: LEARN
+      - generic [ref=f1e566]:
+        - generic [ref=f1e567]:
+          - generic [ref=f1e568]:
+            - generic [ref=f1e569]: "05"
+            - text: Education
+          - generic [ref=f1e570]:
+            - generic [ref=f1e571]:
+              - paragraph [ref=f1e572]: My education & training
+              - heading [level=2] [ref=f1e573]:
+                - text: Learning in class.
+                - emphasis [ref=f1e574]: Building in practice.
+            - paragraph [ref=f1e575]: Formal study and intensive hands-on training shape the way I solve problems and build complete applications.
+        - generic [ref=f1e576]:
+          - article [ref=f1e577]:
+            - generic [ref=f1e578]:
+              - generic [ref=f1e579]: 01 / Immersive training
+              - time [ref=f1e580]: Jun 2026 — Sep 2026
+            - generic [ref=f1e581]:
+              - img "Hacktiv8 logo"
+            - paragraph [ref=f1e582]: Hacktiv8 Indonesia
+            - heading "Full Stack JavaScript Immersive Program" [level=3] [ref=f1e583]: Full Stack JavaScriptImmersive Program
+            - paragraph [ref=f1e584]: 480 hours of project-based work across interfaces, APIs, databases, and AI integrations.
+            - generic [ref=f1e585]:
+              - generic [ref=f1e586]:
+                - strong [ref=f1e587]: "480"
+                - generic [ref=f1e588]: hours of training
+              - generic [ref=f1e589]: Fullstack · AI
+          - article [ref=f1e590]:
+            - generic [ref=f1e591]: In progress
+            - generic [ref=f1e593]:
+              - generic [ref=f1e594]: 02 / University
+              - time [ref=f1e595]: Aug 2024 — Aug 2028
+            - generic [ref=f1e596]:
+              - img "Dian Nuswantoro University logo"
+            - paragraph [ref=f1e597]: Dian Nuswantoro University · Online
+            - heading "Bachelor of Information Technology" [level=3] [ref=f1e598]: Bachelor ofInformation Technology
+            - paragraph [ref=f1e599]: Continuing my degree online while applying what I learn to practical software projects.
+            - generic [ref=f1e600]:
+              - generic [ref=f1e601]:
+                - strong [ref=f1e602]: "3.73"
+                - generic [ref=f1e603]: GPA / 4.00
+              - generic [ref=f1e604]: Online program
+    - region [ref=f1e605]:
+      - text: CERTIFIED
+      - generic [ref=f1e606]:
+        - generic [ref=f1e607]:
+          - generic [ref=f1e608]:
+            - generic [ref=f1e609]: "06"
+            - text: Certificates
+          - generic [ref=f1e610]:
+            - generic [ref=f1e611]:
+              - paragraph [ref=f1e612]: Credentials & milestones
+              - heading [level=2] [ref=f1e613]:
+                - text: Proof of
+                - emphasis [ref=f1e614]: progress.
+            - generic [ref=f1e615]:
+              - strong [ref=f1e616]: "08"
+              - paragraph [ref=f1e617]: Certificates across fullstack development, problem solving, and professional work in Japan.
+        - generic [ref=f1e618]:
+          - article [ref=f1e619]:
+            - generic [ref=f1e620]:
+              - generic [ref=f1e621]: Featured credential
+              - time [ref=f1e625]: Sep 2026
+            - img "Hacktiv8 logo" [ref=f1e627]
+            - generic [ref=f1e628]:
+              - paragraph [ref=f1e629]: HACKTIV8 Indonesia
+              - heading "Fullstack JavaScript Immersive Certificate" [level=3] [ref=f1e630]
+            - generic [ref=f1e631]:
+              - generic [ref=f1e632]: Fullstack development
+              - link "Show Fullstack JavaScript Immersive Certificate credential" [ref=f1e633] [cursor=pointer]:
+                - /url: https://track.pstmrk.it/3s/students.hacktiv8.com%2Fcertificates%2F5f75b136-8d93-4c97-8805-8a7e54a869ce/KSBV/USLIAQ/AQ/bc1bd466-6669-44b0-8d5f-4baa89d202f5/6/zP55bs82U3
+                - text: Show credential
+          - article [ref=f1e637]:
+            - generic [ref=f1e638]:
+              - generic [ref=f1e639]: Featured credential
+              - time [ref=f1e643]: Jul 2025
+            - img "The Japan Foundation logo" [ref=f1e645]
+            - generic [ref=f1e646]:
+              - paragraph [ref=f1e647]: The Japan Foundation / JEES
+              - heading "JLPT N2 Certificate" [level=3] [ref=f1e648]
+            - generic [ref=f1e649]:
+              - generic [ref=f1e650]: Japanese proficiency
+              - link "Show JLPT N2 Certificate credential" [ref=f1e651] [cursor=pointer]:
+                - /url: https://drive.google.com/file/d/1w5gi9mvQXemj45_GoWtPZYlOMOG77Cy9/view?usp=sharing
+                - text: Show credential
+        - generic [ref=f1e655]:
+          - generic [ref=f1e656]: More credentials
+          - generic [ref=f1e657]: 06 / 08
+        - generic [ref=f1e658]:
+          - article [ref=f1e659]:
+            - generic [ref=f1e660]:
+              - img "HackerRank logo" [ref=f1e661]
+              - time [ref=f1e662]: Sep 2026
+            - paragraph [ref=f1e663]: HackerRank
+            - heading "Software Engineer Intern Certificate" [level=3] [ref=f1e664]
+            - generic [ref=f1e665]:
+              - generic [ref=f1e666]: Software engineering
+              - link "Show Software Engineer Intern Certificate credential" [ref=f1e667] [cursor=pointer]:
+                - /url: https://www.hackerrank.com/certificates/a1c026e03635
+                - text: Show credential
+          - article [ref=f1e671]:
+            - generic [ref=f1e672]:
+              - img "HackerRank logo" [ref=f1e673]
+              - time [ref=f1e674]: Sep 2026
+            - paragraph [ref=f1e675]: HackerRank
+            - heading "Problem Solving (Basic)" [level=3] [ref=f1e676]
+            - generic [ref=f1e677]:
+              - generic [ref=f1e678]: Problem solving
+              - link "Show Problem Solving (Basic) credential" [ref=f1e679] [cursor=pointer]:
+                - /url: https://www.hackerrank.com/certificates/e0084917e238
+                - text: Show credential
+          - article [ref=f1e683]:
+            - generic [ref=f1e684]:
+              - img "HackerRank logo" [ref=f1e685]
+              - time [ref=f1e686]: Sep 2026
+            - paragraph [ref=f1e687]: HackerRank
+            - heading "JavaScript (Basic)" [level=3] [ref=f1e688]
+            - generic [ref=f1e689]:
+              - generic [ref=f1e690]: JavaScript
+              - link "Show JavaScript (Basic) credential" [ref=f1e691] [cursor=pointer]:
+                - /url: https://www.hackerrank.com/certificates/d3003df0cd6c
+                - text: Show credential
+          - article [ref=f1e695]:
+            - generic [ref=f1e696]:
+              - img "HackerRank logo" [ref=f1e697]
+              - time [ref=f1e698]: Sep 2026
+            - paragraph [ref=f1e699]: HackerRank
+            - heading "React (Basic)" [level=3] [ref=f1e700]
+            - generic [ref=f1e701]:
+              - generic [ref=f1e702]: React
+              - link "Show React (Basic) credential" [ref=f1e703] [cursor=pointer]:
+                - /url: https://www.hackerrank.com/certificates/6ac782f54ff0
+                - text: Show credential
+          - article [ref=f1e707]:
+            - generic [ref=f1e708]:
+              - img "HackerRank logo" [ref=f1e709]
+              - time [ref=f1e710]: Sep 2026
+            - paragraph [ref=f1e711]: HackerRank
+            - heading "CSS" [level=3] [ref=f1e712]
+            - generic [ref=f1e713]:
+              - generic [ref=f1e714]: Styling
+              - link "Show CSS credential" [ref=f1e715] [cursor=pointer]:
+                - /url: https://www.hackerrank.com/certificates/6f359f4ed50e
+                - text: Show credential
+          - article [ref=f1e719]:
+            - generic [ref=f1e720]:
+              - generic [ref=f1e721]: 神奈川県
+              - time [ref=f1e722]: Jan 2026
+            - paragraph [ref=f1e723]: Kanagawa Prefectural Government
+            - heading "Certificate of Passing the Skill Evaluation Test" [level=3] [ref=f1e724]
+            - generic [ref=f1e725]:
+              - generic [ref=f1e726]: Technical skills
+              - link "Show Certificate of Passing the Skill Evaluation Test credential" [ref=f1e727] [cursor=pointer]:
+                - /url: https://drive.google.com/file/d/18DEVUNCjqcgvF-7bHF5ExCKFAd0d2FOx/view?usp=share_link
+                - text: Show credential
+    - region [ref=f1e731]:
+      - generic [aria-hidden]: CONTACT
+      - generic [ref=f1e732]:
+        - generic [ref=f1e733]:
+          - generic [ref=f1e734]:
+            - generic [ref=f1e735]: "07"
+            - text: Contact
+          - paragraph [ref=f1e736]: Available for opportunities
+          - heading [level=2] [ref=f1e737]:
+            - text: Have something
+            - emphasis [ref=f1e738]: in mind?
+          - paragraph [ref=f1e739]: I'm open to fullstack roles, collaborations, and thoughtful product ideas in Indonesia, Japan, and remote teams.
+        - generic [ref=f1e740]:
+          - generic [ref=f1e741]:
+            - generic [ref=f1e742]: Let's start a conversation
+            - generic [ref=f1e746]: 01 / DIRECT MESSAGE
+          - generic [ref=f1e747]:
+            - generic [ref=f1e748]:
+              - img "Muhamad Rusdiana in a formal portrait" [ref=f1e750]
+              - generic [ref=f1e751]: Have a project or an opportunity?
+              - heading [level=3] [ref=f1e752]:
+                - text: Let's make
+                - emphasis [ref=f1e753]: it happen.
+              - paragraph [ref=f1e754]: I'm Muhamad, a fullstack developer based in Bekasi. Share your idea or opportunity and I'll get back to you directly.
+              - button "Copy email address" [ref=f1e755] [cursor=pointer]:
+                - generic [ref=f1e759]: Copy email instead
+            - generic [ref=f1e760]:
+              - generic [ref=f1e761]:
+                - text: To
+                - textbox "To" [ref=f1e762]: muhamadrusdiana452@gmail.com
+              - generic [ref=f1e763]:
+                - generic [ref=f1e764]:
+                  - text: Your name
+                  - textbox "Your name" [ref=f1e765]
+                - generic [ref=f1e766]:
+                  - text: From
+                  - textbox "From" [ref=f1e767]:
+                    - /placeholder: you@example.com
+              - generic [ref=f1e768]:
+                - text: Subject
+                - textbox "Subject" [ref=f1e769]:
+                  - /placeholder: Let’s work together
+              - generic [ref=f1e770]:
+                - text: Message
+                - textbox "Message" [ref=f1e771]:
+                  - /placeholder: Tell me a little about what you have in mind…
+              - generic [aria-hidden] [ref=f1e772]:
+                - text: Company
+                - textbox [ref=f1e773]
+              - generic [ref=f1e774]:
+                - status
+                - button "Send message" [ref=f1e775] [cursor=pointer]
+        - generic [ref=f1e782]:
+          - link "GitHub Projects & code" [ref=f1e783] [cursor=pointer]:
+            - /url: https://github.com/mrusdiana
+            - generic [ref=f1e786]:
+              - strong [ref=f1e787]: GitHub
+              - generic [ref=f1e788]: Projects & code
+          - link "LinkedIn Professional profile" [ref=f1e792] [cursor=pointer]:
+            - /url: https://linkedin.com/in/muhamad-rusdiana-99054b428
+            - generic [ref=f1e795]:
+              - strong [ref=f1e796]: LinkedIn
+              - generic [ref=f1e797]: Professional profile
+          - generic [ref=f1e805]:
+            - strong [ref=f1e806]: Based in Bekasi
+            - generic [ref=f1e807]: Indonesia · open to remote
+        - generic [ref=f1e808]:
+          - generic [ref=f1e809]: © 2026 Muhamad Rusdiana
+          - link "Back to top" [ref=f1e810] [cursor=pointer]:
+            - /url: "#top"
+  - generic:
+    - generic [aria-hidden]:
+      - link:
+        - /url: "#top"
+        - generic: Scroll to top
+      - link:
+        - /url: https://linkedin.com/in/muhamad-rusdiana-99054b428
+        - generic: LinkedIn
+      - link:
+        - /url: mailto:muhamadrusdiana452@gmail.com
+        - generic: Email
+      - link:
+        - /url: https://github.com/mrusdiana
+        - generic: GitHub
+    - button "Open quick links" [ref=f1e814] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=f1e822] [cursor=pointer]

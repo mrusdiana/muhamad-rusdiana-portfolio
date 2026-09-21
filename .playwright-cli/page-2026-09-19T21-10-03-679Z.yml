@@ -1,0 +1,398 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Lewati ke konten utama" [ref=e3] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "DOLAN beranda" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "DOLAN" [ref=e7]
+        - navigation [ref=e8]:
+          - link "Beranda" [ref=e9] [cursor=pointer]:
+            - /url: /
+          - link "Jelajah" [ref=e10] [cursor=pointer]:
+            - /url: /jelajah
+          - link "Trip Saya" [ref=e11] [cursor=pointer]:
+            - /url: /trip-saya
+          - link "Rekomendasi" [ref=e12] [cursor=pointer]:
+            - /url: /rekomendasi
+        - generic [ref=e13]:
+          - link "Notifikasi" [ref=e14] [cursor=pointer]:
+            - /url: /masuk
+          - link "Masuk" [ref=e17] [cursor=pointer]:
+            - /url: /masuk
+          - link "Daftar" [ref=e18] [cursor=pointer]:
+            - /url: /daftar
+    - main [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e25]:
+          - img "Nusa Penida" [ref=e26]
+          - generic [ref=e27]: Bali
+        - generic [ref=e28]:
+          - img "Labuan Bajo" [ref=e29]
+          - generic [ref=e30]: Labuan Bajo
+        - generic [ref=e31]:
+          - img "Wayan, traveler Dolan" [ref=e33]
+          - paragraph [ref=e34]: Ada yang ke Labuan Bajo?
+        - generic [ref=e35]:
+          - img "Sinta, traveler Dolan" [ref=e37]
+          - paragraph [ref=e38]: Cari teman sunrise-an ☀️
+        - generic [ref=e40]:
+          - generic [ref=e41]: Dolan bareng, cerita bareng
+          - heading [level=1] [ref=e42]:
+            - text: Tujuannya sama.
+            - emphasis [ref=e43]: Ceritanya bisa bersama.
+          - paragraph [ref=e44]: Temukan destinasi, susun itinerary sesuai budget, lalu berangkat bersama traveler yang punya rencana serupa.
+          - form "Cari provinsi" [ref=e45]:
+            - generic [ref=e46]:
+              - generic [ref=e47]: Provinsi tujuan
+              - textbox "Provinsi tujuan" [ref=e50]:
+                - /placeholder: Cari provinsi, mis. Bali atau Jawa Timur
+            - button "Cari provinsi" [ref=e51]
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - figure [ref=e58]:
+            - generic [ref=e59]: Danau Toba
+          - figure [ref=e60]:
+            - generic [ref=e61]: Anak Krakatau
+          - figure [ref=e62]:
+            - generic [ref=e63]: Kawah Putih
+          - figure [ref=e64]:
+            - generic [ref=e65]: Gunung Bromo
+          - figure [ref=e66]:
+            - generic [ref=e67]: Tanah Lot
+          - figure [ref=e68]:
+            - generic [ref=e69]: Rinjani
+          - figure [ref=e70]:
+            - generic [ref=e71]: Pulau Padar
+          - figure [ref=e72]:
+            - generic [ref=e73]: Raja Ampat
+          - figure [ref=e74]:
+            - generic [ref=e75]: Bunaken
+          - figure [ref=e76]:
+            - generic [ref=e77]: Derawan
+          - figure [ref=e78]:
+            - generic [ref=e79]: Ujung Kulon
+          - figure [ref=e80]:
+            - generic [ref=e81]: Danau Sentani
+        - generic [ref=e82]:
+          - figure [ref=e83]:
+            - generic [ref=e84]: Danau Toba
+          - figure [ref=e85]:
+            - generic [ref=e86]: Anak Krakatau
+          - figure [ref=e87]:
+            - generic [ref=e88]: Kawah Putih
+          - figure [ref=e89]:
+            - generic [ref=e90]: Gunung Bromo
+          - figure [ref=e91]:
+            - generic [ref=e92]: Tanah Lot
+          - figure [ref=e93]:
+            - generic [ref=e94]: Rinjani
+          - figure [ref=e95]:
+            - generic [ref=e96]: Pulau Padar
+          - figure [ref=e97]:
+            - generic [ref=e98]: Raja Ampat
+          - figure [ref=e99]:
+            - generic [ref=e100]: Bunaken
+          - figure [ref=e101]:
+            - generic [ref=e102]: Derawan
+          - figure [ref=e103]:
+            - generic [ref=e104]: Ujung Kulon
+          - figure [ref=e105]:
+            - generic [ref=e106]: Danau Sentani
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: Jelajah daerah
+            - heading "Provinsi yang bikin ingin segera berangkat" [level=2] [ref=e111]
+            - paragraph [ref=e112]: Kartu ini adalah daerah, bukan destinasi tunggal. Ketuk untuk buka halaman provinsi.
+          - link "Lihat 38 provinsi" [ref=e113] [cursor=pointer]:
+            - /url: /rekomendasi
+        - generic [ref=e116]:
+          - link [ref=e117] [cursor=pointer]:
+            - /url: /provinsi/bali
+            - img "Bali" [ref=e118]
+            - generic [ref=e119]:
+              - text: Provinsi
+              - heading "Bali" [level=3] [ref=e120]
+              - paragraph [ref=e121]: Ibu kota Denpasar
+          - link [ref=e122] [cursor=pointer]:
+            - /url: /provinsi/jawa-timur
+            - img "Jawa Timur" [ref=e123]
+            - generic [ref=e124]:
+              - text: Provinsi
+              - heading "Jawa Timur" [level=3] [ref=e125]
+              - paragraph [ref=e126]: Ibu kota Surabaya
+          - link [ref=e127] [cursor=pointer]:
+            - /url: /provinsi/nusa-tenggara-timur
+            - img "Nusa Tenggara Timur" [ref=e128]
+            - generic [ref=e129]:
+              - text: Provinsi
+              - heading "Nusa Tenggara Timur" [level=3] [ref=e130]
+              - paragraph [ref=e131]: Ibu kota Kupang
+          - link [ref=e132] [cursor=pointer]:
+            - /url: /provinsi/di-yogyakarta
+            - img "DI Yogyakarta" [ref=e133]
+            - generic [ref=e134]:
+              - text: Provinsi
+              - heading "DI Yogyakarta" [level=3] [ref=e135]
+              - paragraph [ref=e136]: Ibu kota Yogyakarta
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - generic [ref=e139]:
+            - generic [ref=e140]: Temukan teman seperjalanan
+            - heading "Trip publik yang sedang membuka slot" [level=2] [ref=e141]
+            - paragraph [ref=e142]: Dari database Dolan — bukan contoh marketing.
+          - link "Jelajahi semua trip" [ref=e143] [cursor=pointer]:
+            - /url: /jelajah?tab=trip
+        - generic [ref=e146]:
+          - article [ref=e147]:
+            - generic [ref=e148]:
+              - img "Trip ke Bali" [ref=e149]
+              - generic [ref=e150]: Join gratis
+            - generic [ref=e151]:
+              - heading "Trip ke Bali" [level=3] [ref=e152]
+              - paragraph [ref=e153]: Bali
+              - paragraph [ref=e156]: 20 Sep – 23 Sep · Sisa 7 slot
+              - generic [ref=e159]:
+                - link "Lihat rencana" [ref=e160] [cursor=pointer]:
+                  - /url: /trip/3a4fb7c2-2a90-4d04-80a0-b2194ee11af4
+                - link "Gabung" [ref=e161] [cursor=pointer]:
+                  - /url: /trip/3a4fb7c2-2a90-4d04-80a0-b2194ee11af4#join
+          - article [ref=e162]:
+            - generic [ref=e163]:
+              - img "Open trip kawah dan kopi Bandung" [ref=e164]
+              - generic [ref=e165]: Join gratis
+            - generic [ref=e166]:
+              - heading "Open trip kawah dan kopi Bandung" [level=3] [ref=e167]
+              - paragraph [ref=e168]: Bukittinggi
+              - paragraph [ref=e171]: 28 Sep · Sisa 7 slot
+              - generic [ref=e174]:
+                - link "Lihat rencana" [ref=e175] [cursor=pointer]:
+                  - /url: /trip/44cda367-b6da-4917-b3ae-2bc7ea5f39a8
+                - link "Gabung" [ref=e176] [cursor=pointer]:
+                  - /url: /trip/44cda367-b6da-4917-b3ae-2bc7ea5f39a8#join
+          - article [ref=e177]:
+            - generic [ref=e178]:
+              - img "Open trip Parangtritis minggu depan" [ref=e179]
+              - generic [ref=e180]: Join gratis
+            - generic [ref=e181]:
+              - heading "Open trip Parangtritis minggu depan" [level=3] [ref=e182]
+              - paragraph [ref=e183]: Belitung
+              - paragraph [ref=e186]: 3 Okt – 4 Okt · Sisa 7 slot
+              - generic [ref=e189]:
+                - link "Lihat rencana" [ref=e190] [cursor=pointer]:
+                  - /url: /trip/155cc8bb-c681-4aae-bce5-17ac658b0e77
+                - link "Gabung" [ref=e191] [cursor=pointer]:
+                  - /url: /trip/155cc8bb-c681-4aae-bce5-17ac658b0e77#join
+          - article [ref=e192]:
+            - generic [ref=e193]:
+              - img "Open trip Rinjani, slot masih longgar" [ref=e194]
+              - generic [ref=e195]: Join gratis
+            - generic [ref=e196]:
+              - heading "Open trip Rinjani, slot masih longgar" [level=3] [ref=e197]
+              - paragraph [ref=e198]: Banyuwangi
+              - paragraph [ref=e201]: 11 Okt – 13 Okt · Sisa 7 slot
+              - generic [ref=e204]:
+                - link "Lihat rencana" [ref=e205] [cursor=pointer]:
+                  - /url: /trip/59b97588-a878-40fc-88ff-3a4ddcfca3be
+                - link "Gabung" [ref=e206] [cursor=pointer]:
+                  - /url: /trip/59b97588-a878-40fc-88ff-3a4ddcfca3be#join
+          - article [ref=e207]:
+            - generic [ref=e208]:
+              - 'img "Bromo sedang berjalan: jeep dan sunrise" [ref=e209]'
+              - generic [ref=e210]: Join gratis
+            - generic [ref=e211]:
+              - 'heading "Bromo sedang berjalan: jeep dan sunrise" [level=3] [ref=e212]'
+              - paragraph [ref=e213]: Berau
+              - paragraph [ref=e216]: 16 Sep – 18 Sep · Sisa 4 slot
+              - generic [ref=e219]:
+                - link "Lihat rencana" [ref=e220] [cursor=pointer]:
+                  - /url: /trip/772b6697-f760-4e85-98fb-484659c3c052
+                - link "Gabung" [ref=e221] [cursor=pointer]:
+                  - /url: /trip/772b6697-f760-4e85-98fb-484659c3c052#join
+          - article [ref=e222]:
+            - generic [ref=e223]:
+              - img "Pantai senja, pulang tepat waktu" [ref=e224]
+              - generic [ref=e225]: Join gratis
+            - generic [ref=e226]:
+              - heading "Pantai senja, pulang tepat waktu" [level=3] [ref=e227]
+              - paragraph [ref=e228]: Yogyakarta
+              - paragraph [ref=e231]: 8 Sep · Sisa 5 slot
+              - generic [ref=e234]:
+                - link "Lihat rencana" [ref=e235] [cursor=pointer]:
+                  - /url: /trip/9442a5d7-f2cc-49e8-bee7-7e36b9eefbd4
+                - link "Gabung" [ref=e236] [cursor=pointer]:
+                  - /url: /trip/9442a5d7-f2cc-49e8-bee7-7e36b9eefbd4#join
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - generic [ref=e239]: Cara kerja Dolan
+          - heading "Lihat perjalananmu terbentuk" [level=2] [ref=e240]
+          - paragraph [ref=e241]: Tiga langkah sederhana, didemonstrasikan langsung seperti saat kamu memakai Dolan.
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - button "1 Temukan tujuan Cari kota, destinasi, atau trip publik yang waktunya cocok." [ref=e244]:
+              - generic [ref=e245]: "1"
+              - generic [ref=e246]:
+                - text: Temukan tujuan
+                - paragraph [ref=e247]: Cari kota, destinasi, atau trip publik yang waktunya cocok.
+            - button "2 Susun itinerary Atur budget, lalu Dolan bantu susun urutan perjalanannya biar lebih nyaman." [ref=e249]:
+              - generic [ref=e250]: "2"
+              - generic [ref=e251]:
+                - text: Susun itinerary
+                - paragraph [ref=e252]: Atur budget, lalu Dolan bantu susun urutan perjalanannya biar lebih nyaman.
+            - button "3 Kenalan & berangkat Cek profil, berdiskusi, lalu ajukan join ke trip yang kamu percaya." [ref=e254]:
+              - generic [ref=e255]: "3"
+              - generic [ref=e256]:
+                - text: Kenalan & berangkat
+                - paragraph [ref=e257]: Cek profil, berdiskusi, lalu ajukan join ke trip yang kamu percaya.
+          - generic [ref=e259]:
+            - generic [ref=e260]: Dolan
+            - generic [ref=e264]:
+              - text: Cari petualangan
+              - heading "Mau dolan ke mana?" [level=3] [ref=e265]
+              - generic [ref=e266]: Cari kota atau destinasi
+              - generic [ref=e272]:
+                - article [ref=e273]:
+                  - img "Nusa Penida" [ref=e274]
+                  - generic [ref=e275]:
+                    - text: Nusa Penida
+                    - generic [ref=e276]: 12 trip tersedia
+                - article [ref=e277]:
+                  - img "Labuan Bajo" [ref=e278]
+                  - generic [ref=e279]:
+                    - text: Labuan Bajo
+                    - generic [ref=e280]: 8 trip tersedia
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - generic [ref=e295]: Itinerary & budgeting dari Dolan
+          - heading "Rute lebih efisien, budget lebih terkendali" [level=2] [ref=e296]
+          - paragraph [ref=e297]: Dolan menyusun urutan kunjungan berdasarkan lokasi, durasi, gaya perjalanan, dan batas budgetmu. Semua hasil tetap bisa diedit.
+          - generic [ref=e298]:
+            - article [ref=e299]:
+              - generic [ref=e300]: Hari 1
+              - generic [ref=e301]:
+                - heading "Bandara Komodo → Pulau Kelor" [level=3] [ref=e302]
+                - paragraph [ref=e303]: Tiba, bertemu peserta, lalu trekking ringan saat sunset.
+            - article [ref=e304]:
+              - generic [ref=e305]: Hari 2
+              - generic [ref=e306]:
+                - heading "Padar → Pink Beach → Manta Point" [level=3] [ref=e307]
+                - paragraph [ref=e308]: Rute disusun berurutan agar waktu lebih efisien.
+            - article [ref=e309]:
+              - generic [ref=e310]: Hari 3
+              - generic [ref=e311]:
+                - heading "Kanawa → Labuan Bajo" [level=3] [ref=e312]
+                - paragraph [ref=e313]: Snorkeling pagi dan kembali sebelum jadwal kepulangan.
+        - complementary [ref=e314]:
+          - generic [ref=e315]: Rekomendasi Dolan
+          - heading "Estimasi budget perjalananmu" [level=3] [ref=e318]
+          - paragraph [ref=e319]: Menyesuaikan kota asal, tanggal, durasi, transportasi, penginapan, makan, dan aktivitas.
+          - generic [ref=e321]:
+            - text: Transportasi
+            - generic [ref=e322]: 42%
+          - generic [ref=e326]:
+            - text: Penginapan
+            - generic [ref=e327]: 24%
+          - generic [ref=e331]:
+            - text: Makan
+            - generic [ref=e332]: 18%
+          - generic [ref=e336]:
+            - text: Aktivitas
+            - generic [ref=e337]: 16%
+          - generic [ref=e340]: Estimasi merupakan panduan dan mengikuti harga aktual penyedia.
+          - link "Buat itinerary versiku" [ref=e341] [cursor=pointer]:
+            - /url: /buat-trip
+      - generic [ref=e344]:
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - img "Dimas, traveler Dolan" [ref=e347]
+            - generic [ref=e348]: Verified traveler
+          - generic [ref=e349]:
+            - generic [ref=e350]: Contoh demo · bukan data akun nyata
+            - heading "Kenali orangnya sebelum berangkat bersama" [level=2] [ref=e351]
+            - paragraph [ref=e352]: Setiap anggota punya profil, riwayat trip, koneksi, serta rating dari rekan satu perjalanan.
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - text: "16"
+                - generic [ref=e355]: Trip selesai
+              - generic [ref=e356]:
+                - text: "42"
+                - generic [ref=e357]: Koneksi
+              - generic [ref=e358]:
+                - text: "4.98"
+                - generic [ref=e359]: DolanScore
+            - link "Lihat contoh profil" [ref=e360] [cursor=pointer]:
+              - /url: /profil
+        - generic [ref=e361]:
+          - generic [ref=e363]:
+            - generic [ref=e364]: Komunikasi & koordinasi
+            - generic [ref=e365]: 5.0 / 5
+          - generic [ref=e369]:
+            - generic [ref=e370]: Sikap & kebersamaan
+            - generic [ref=e371]: 4.92 / 5
+          - generic [ref=e375]:
+            - generic [ref=e376]: Ketepatan waktu
+            - generic [ref=e377]: 4.85 / 5
+          - paragraph [ref=e380]: Rating hanya diberikan oleh anggota trip yang sudah selesai.
+      - generic [ref=e382]:
+        - generic [ref=e383]: Petualangan berikutnya menunggumu
+        - heading "Siap menjejakkan langkah di bawah langit Indonesia?" [level=2] [ref=e384]
+        - paragraph [ref=e385]: Buat rencana perjalananmu atau temukan traveler dengan tujuan yang sama.
+        - generic [ref=e386]:
+          - link "Buat trip pertamaku" [ref=e387] [cursor=pointer]:
+            - /url: /buat-trip
+          - link "Jelajahi trip publik" [ref=e390] [cursor=pointer]:
+            - /url: /jelajah
+      - generic [ref=e391]:
+        - generic [ref=e392]:
+          - generic [ref=e393]: Pertanyaan umum
+          - heading "Sebelum mulai dolan" [level=2] [ref=e394]
+          - paragraph [ref=e395]: Hal penting tentang trip bersama, keamanan, dan itinerary di Dolan.
+        - generic [ref=e396]:
+          - group [ref=e397]:
+            - generic "Apakah join trip di Dolan berbayar?" [ref=e398] [cursor=pointer]
+            - paragraph [ref=e402]: Tidak. Setiap peserta membayar kebutuhan perjalanannya sendiri dan tidak membayar biaya join kepada host.
+          - group [ref=e403]:
+            - generic "Bagaimana memastikan teman perjalanan dapat dipercaya?" [ref=e404] [cursor=pointer]
+          - group [ref=e408]:
+            - generic "Apakah itinerary dari Dolan bisa diedit?" [ref=e409] [cursor=pointer]
+          - group [ref=e413]:
+            - generic "Dari mana data destinasi dan rute berasal?" [ref=e414] [cursor=pointer]
+          - group [ref=e418]:
+            - generic "Bisakah trip dibuat private?" [ref=e419] [cursor=pointer]
+    - contentinfo [ref=e423]:
+      - generic [ref=e424]:
+        - generic [ref=e425]:
+          - link "DOLAN beranda" [ref=e426] [cursor=pointer]:
+            - /url: /
+            - img "DOLAN" [ref=e427]
+          - paragraph [ref=e428]: Temukan tujuan, susun itinerary, dan kenalan dengan traveler yang punya rencana perjalanan serupa.
+        - generic [ref=e429]:
+          - heading "Jelajahi" [level=3] [ref=e430]
+          - generic [ref=e431]:
+            - link "38 provinsi" [ref=e432] [cursor=pointer]:
+              - /url: /provinsi
+            - link "Destinasi" [ref=e433] [cursor=pointer]:
+              - /url: /jelajah
+            - link "Trip publik" [ref=e434] [cursor=pointer]:
+              - /url: /jelajah?tab=trip
+            - link "Trip Saya" [ref=e435] [cursor=pointer]:
+              - /url: /trip-saya
+            - link "Buat itinerary" [ref=e436] [cursor=pointer]:
+              - /url: /buat-trip
+            - link "Komunitas" [ref=e437] [cursor=pointer]:
+              - /url: /profil
+        - generic [ref=e438]:
+          - heading "Dukungan" [level=3] [ref=e439]
+          - generic [ref=e440]:
+            - link "FAQ" [ref=e441] [cursor=pointer]:
+              - /url: /#faq
+            - link "Notifikasi" [ref=e442] [cursor=pointer]:
+              - /url: /notifikasi
+        - generic [ref=e443]:
+          - heading "Temui kami" [level=3] [ref=e444]
+          - paragraph [ref=e445]: Kebayoran Baru,Jakarta Selatan
+          - paragraph [ref=e448]: halo@dolan.id
+      - generic [ref=e451]: © 2026 Dolan Indonesia · Dibuat untuk perjalanan yang lebih bermakna.
+  - alert [ref=e452]
