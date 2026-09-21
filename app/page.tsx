@@ -1602,7 +1602,7 @@ function ContactSection() {
               </h3>
               <p>
                 I&apos;m Rusdi, a Full-Stack Developer open to new opportunities
-                and collaborations. Feel free to reach out—I'd be happy to
+                and collaborations. Feel free to reach out—I&apos;d be happy to
                 connect and discuss how I can contribute.
               </p>
               <button
