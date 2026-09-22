@@ -561,8 +561,8 @@ function AboutSection() {
             ))}
           </div>
           <a
-            href="/CV-MUHAMAD- RUSDIANA.pdf"
-            download="CV-MUHAMAD- RUSDIANA.pdf"
+            href="/CV-MUHAMAD-RUSDIANA.pdf"
+            download="CV-MUHAMAD-RUSDIANA.pdf"
             className="cv-button reveal-item"
           >
             Download CV

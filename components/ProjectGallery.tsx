@@ -24,7 +24,7 @@ export default function ProjectGallery({
   return (
     <section className="case-gallery" aria-label={`${name} screenshot gallery`}>
       <div className="case-gallery-top">
-        <span>Project screenshots</span>
+        <span>Project Gallery</span>
         <span>{String(images.length).padStart(2, "0")} screens</span>
       </div>
       <div className="case-gallery-grid">
