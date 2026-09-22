@@ -44,7 +44,7 @@ export const projects: Project[] = [
       "/dolan/Detail Provinsi 2.png",
       "/dolan/Homepage(After login).png",
       "/dolan/Jelajah.png",
-      "/dolan/generate result.png",
+      "/dolan/Generate Result.png",
       "/dolan/Trip saya.png",
       "/dolan/Room chat.png",
       "/dolan/Detail Trip.png",
