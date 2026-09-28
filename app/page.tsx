@@ -34,9 +34,11 @@ import {
   FaLinkedinIn,
   FaLock,
   FaRobot,
+  FaWhatsapp,
 } from "react-icons/fa6";
 import ScrollStack, { ScrollStackItem } from "@/components/ScrollStack";
 import ThemeToggle from "@/components/ThemeToggle";
+import VisitorCount from "@/components/VisitorCount";
 import { projects } from "@/data/projects";
 import {
   SiAxios,
@@ -377,11 +379,31 @@ function HeroVideo() {
     const canvas = canvasRef.current;
     if (!video || !canvas) return;
 
-    const context = canvas.getContext("2d", { alpha: true });
+    const context = canvas.getContext("2d", {
+      alpha: true,
+      willReadFrequently: true,
+    });
     if (!context) return;
 
     let frame = 0;
+    let isVisible = true;
+
+    const stopDrawing = () => {
+      if (!frame) return;
+      cancelAnimationFrame(frame);
+      frame = 0;
+    };
+
+    const startDrawing = () => {
+      if (!frame && isVisible && !document.hidden) {
+        frame = requestAnimationFrame(draw);
+      }
+    };
+
     const draw = () => {
+      frame = 0;
+      if (!isVisible || document.hidden) return;
+
       if (video.readyState >= 2) {
         if (!canvas.width || canvas.width === 300) {
           const scale = Math.min(1, 720 / video.videoWidth);
@@ -415,8 +437,25 @@ function HeroVideo() {
       frame = requestAnimationFrame(draw);
     };
 
-    frame = requestAnimationFrame(draw);
-    return () => cancelAnimationFrame(frame);
+    const observer = new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+      if (isVisible) startDrawing();
+      else stopDrawing();
+    });
+    const onVisibilityChange = () => {
+      if (document.hidden) stopDrawing();
+      else startDrawing();
+    };
+
+    observer.observe(canvas);
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    startDrawing();
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+      stopDrawing();
+    };
   }, []);
 
   return (
@@ -655,46 +694,58 @@ function SkillsSection() {
 
           <div className="skill-panel" id="skill-panel" aria-live="polite">
             <div
-              className={`skill-grid ${showAllSkills ? "is-expanded" : ""}`}
-              id="skill-grid"
-              key={activeGroup}
+              className={`skill-grid-stage ${
+                showAllSkills ? "is-expanded" : ""
+              } ${
+                filteredSkills.length > 24
+                  ? "has-more"
+                  : filteredSkills.length > 12
+                    ? "has-mobile-more"
+                    : ""
+              }`}
             >
-              {filteredSkills.map(
-                ({ name, icon: Icon, color, group }, index) => (
-                  <article
-                    className="skill-tile"
-                    key={name}
-                    style={
-                      {
-                        "--skill-color": color,
-                        "--skill-dark-color": darkSkillColors[name] ?? color,
-                        "--tile-delay": `${index * 60}ms`,
-                      } as React.CSSProperties
-                    }
-                  >
-                    <span className="skill-icon">
-                      <Icon aria-hidden="true" size={32} />
-                    </span>
-                    <strong>{name}</strong>
-                    <span className="skill-status">{group}</span>
-                  </article>
-                )
+              <div
+                className={`skill-grid ${showAllSkills ? "is-expanded" : ""}`}
+                id="skill-grid"
+                key={activeGroup}
+              >
+                {filteredSkills.map(
+                  ({ name, icon: Icon, color, group }, index) => (
+                    <article
+                      className="skill-tile"
+                      key={name}
+                      style={
+                        {
+                          "--skill-color": color,
+                          "--skill-dark-color": darkSkillColors[name] ?? color,
+                          "--tile-delay": `${index * 60}ms`,
+                        } as React.CSSProperties
+                      }
+                    >
+                      <span className="skill-icon">
+                        <Icon aria-hidden="true" size={32} />
+                      </span>
+                      <strong>{name}</strong>
+                      <span className="skill-status">{group}</span>
+                    </article>
+                  )
+                )}
+              </div>
+              {filteredSkills.length > 12 && (
+                <button
+                  type="button"
+                  className={`skill-show-more ${
+                    filteredSkills.length <= 24 ? "mobile-only" : ""
+                  }`}
+                  aria-controls="skill-grid"
+                  aria-expanded={showAllSkills}
+                  onClick={() => setShowAllSkills((current) => !current)}
+                >
+                  {showAllSkills ? "Show less" : "Show more"}
+                  <ArrowDownRight aria-hidden="true" size={17} />
+                </button>
               )}
             </div>
-            {filteredSkills.length > 12 && (
-              <button
-                type="button"
-                className={`skill-show-more ${
-                  filteredSkills.length <= 24 ? "mobile-only" : ""
-                }`}
-                aria-controls="skill-grid"
-                aria-expanded={showAllSkills}
-                onClick={() => setShowAllSkills((current) => !current)}
-              >
-                {showAllSkills ? "Show less" : "Show more"}
-                <ArrowDownRight aria-hidden="true" size={17} />
-              </button>
-            )}
           </div>
         </div>
       </div>
@@ -751,29 +802,49 @@ function ProjectsSection() {
       lastScrollY = window.scrollY;
     };
     const animate = () => {
-      if (isInView && !reduceMotion.matches) {
-        const loopWidth = track.scrollWidth / 2;
-        velocity *= 0.91;
-        position = (position + 0.45 + velocity * 0.12 + loopWidth) % loopWidth;
-        track.style.transform = `translate3d(${-position}px, 0, 0)`;
-      }
+      frame = 0;
+      if (!isInView || reduceMotion.matches) return;
+      const loopWidth = track.scrollWidth / 2;
+      velocity *= 0.91;
+      position = (position + 0.45 + velocity * 0.12 + loopWidth) % loopWidth;
+      track.style.transform = `translate3d(${-position}px, 0, 0)`;
       frame = requestAnimationFrame(animate);
+    };
+    const stopAnimation = () => {
+      if (!frame) return;
+      cancelAnimationFrame(frame);
+      frame = 0;
+    };
+    const startAnimation = () => {
+      if (!frame && isInView && !reduceMotion.matches) {
+        frame = requestAnimationFrame(animate);
+      }
     };
     const observer = new IntersectionObserver(
       ([entry]) => {
         isInView = entry.isIntersecting;
         setShowSkip(isInView);
-        if (isInView) section.classList.add("is-visible");
+        if (isInView) {
+          section.classList.add("is-visible");
+          startAnimation();
+        } else {
+          stopAnimation();
+        }
       },
       { threshold: 0 }
     );
+    const onMotionChange = () => {
+      if (reduceMotion.matches) stopAnimation();
+      else startAnimation();
+    };
     observer.observe(section);
     window.addEventListener("scroll", onScroll, { passive: true });
-    frame = requestAnimationFrame(animate);
+    reduceMotion.addEventListener("change", onMotionChange);
     return () => {
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(frame);
+      reduceMotion.removeEventListener("change", onMotionChange);
+      stopAnimation();
     };
   }, []);
 
@@ -1291,10 +1362,21 @@ function EducationSection() {
             </p>
             <div className="education-card-bottom">
               <div>
-                <strong>480</strong>
-                <span>hours of training</span>
+                <strong className="education-grade">
+                  96 <small>/ 100</small>
+                </strong>
+                <span>Honor Awards</span>
               </div>
-              <span>Fullstack · AI</span>
+              <a
+                href="https://job-portal-manual.s3.us-east-1.amazonaws.com/Transcript+-+HCK-98+-+2026+-+Muhamad+Rusdiana.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="education-transcript"
+                aria-label="Open Hacktiv8 academic transcript"
+              >
+                <span>View transcript</span>
+                <ArrowUpRight aria-hidden="true" size={15} />
+              </a>
             </div>
           </article>
 
@@ -1712,14 +1794,15 @@ function ContactSection() {
           style={{ "--delay": "210ms" } as React.CSSProperties}
         >
           <a
-            href="https://github.com/mrusdiana"
+            href="https://wa.me/6285156248671"
             target="_blank"
             rel="noreferrer"
+            aria-label="Chat with me on WhatsApp at +6285156248671"
           >
-            <FaGithub aria-hidden="true" size={23} />
+            <FaWhatsapp aria-hidden="true" size={23} />
             <span>
-              <strong>GitHub</strong>
-              <small>Projects & code</small>
+              <strong>WhatsApp</strong>
+              <small>+6285156248671</small>
             </span>
             <ArrowUpRight aria-hidden="true" size={17} />
           </a>
@@ -1761,6 +1844,7 @@ function ContactSection() {
           style={{ "--delay": "220ms" } as React.CSSProperties}
         >
           <span>© 2026 Muhamad Rusdiana</span>
+          <VisitorCount />
           <a href="#top">
             Back to top <ArrowUpRight aria-hidden="true" size={15} />
           </a>

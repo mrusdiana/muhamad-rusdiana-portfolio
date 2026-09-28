@@ -20,7 +20,7 @@ export function ScrollStackItem({
 }) {
   return (
     <div
-      className="scroll-stack-card"
+      className="scroll-stack-card sticky mb-[var(--item-distance)] w-full origin-top transform-gpu backface-hidden will-change-transform [&:nth-last-child(2)]:mb-0"
       style={{ top: `${92 + index * 22}px`, zIndex: index + 1 }}
     >
       {children}
@@ -101,7 +101,7 @@ export default function ScrollStack({
   return (
     <div
       ref={stackRef}
-      className={`scroll-stack ${className}`.trim()}
+      className={`relative w-full [&_.project-card]:w-full ${className}`.trim()}
       style={
         {
           "--item-distance": `${itemDistance}px`,
@@ -109,9 +109,9 @@ export default function ScrollStack({
         } as CSSProperties
       }
     >
-      <div className="scroll-stack-inner">
+      <div className="relative pb-1">
         {children}
-        <div className="scroll-stack-end" aria-hidden="true" />
+        <div className="h-[12vh] min-h-[90px]" aria-hidden="true" />
       </div>
     </div>
   );

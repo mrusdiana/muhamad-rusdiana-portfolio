@@ -1,7 +1,12 @@
 "use client";
 
 import { ArrowUp, Mail, CircleArrowOutUpRight, X } from "lucide-react";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
 
 const actions = [
@@ -19,6 +24,12 @@ const actions = [
     external: true,
   },
   { label: "Email", href: "mailto:muhamadrusdiana452@gmail.com", icon: Mail },
+  {
+    label: "WhatsApp",
+    href: "https://wa.me/6285156248671",
+    icon: FaWhatsapp,
+    external: true,
+  },
   {
     label: "GitHub",
     href: "https://github.com/mrusdiana",
@@ -48,9 +59,17 @@ export default function QuickActions() {
   }, [open]);
 
   return (
-    <div className={`quick-actions ${open ? "is-open" : ""}`} ref={menuRef}>
+    <div
+      className="pointer-events-none fixed right-[22px] bottom-[22px] z-[95] flex flex-col items-end gap-[11px] max-[767px]:right-[14px] max-[767px]:bottom-[22px]"
+      data-open={open}
+      ref={menuRef}
+    >
       <div
-        className="quick-actions-list"
+        className={`quick-actions-menu ${
+          open
+            ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
+            : "pointer-events-none translate-y-3 scale-95 opacity-0"
+        }`}
         id="quick-actions-list"
         aria-hidden={!open}
       >
@@ -62,14 +81,16 @@ export default function QuickActions() {
             rel={external ? "noreferrer" : undefined}
             tabIndex={open ? 0 : -1}
             onClick={() => setOpen(false)}
+            className="quick-actions-link"
           >
             <span>{label}</span>
-            <Icon size={18} aria-hidden="true" />
+            <Icon size={17} aria-hidden="true" />
           </a>
         ))}
       </div>
       <button
         type="button"
+        className="pointer-events-auto grid size-[54px] cursor-pointer place-items-center rounded-full border border-white/55 bg-[#f16524] text-white shadow-[0_14px_40px_rgba(74,32,17,0.23)] transition-[transform,background] duration-200 hover:-translate-y-[3px] hover:bg-[#d9551d] focus-visible:-translate-y-[3px] focus-visible:bg-[#d9551d] max-[767px]:size-[50px]"
         aria-label={open ? "Close quick links" : "Open quick links"}
         aria-expanded={open}
         aria-controls="quick-actions-list"

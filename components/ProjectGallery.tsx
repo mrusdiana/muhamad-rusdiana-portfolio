@@ -22,19 +22,28 @@ export default function ProjectGallery({
   }, [selected]);
 
   return (
-    <section className="case-gallery" aria-label={`${name} screenshot gallery`}>
-      <div className="case-gallery-top">
+    <section
+      className="mx-auto w-[min(calc(100%-48px),1120px)] pt-3 pb-[25px] max-[767px]:w-[calc(100%-32px)]"
+      aria-label={`${name} screenshot gallery`}
+    >
+      <div className="mb-[13px] flex justify-between gap-[15px] text-[0.65rem] font-extrabold tracking-[0.08em] text-[var(--case-accent)] uppercase">
         <span>Project Gallery</span>
         <span>{String(images.length).padStart(2, "0")} screens</span>
       </div>
-      <div className="case-gallery-grid">
+      <div className="grid grid-cols-3 items-stretch gap-[10px] max-[767px]:grid-cols-2 max-[767px]:gap-[7px]">
         {visibleImages.map((src, index) => {
           const more = !expanded && index === 4 && images.length > 5;
           return (
             <button
-              className={`case-gallery-frame ${
-                index === 0 ? "case-gallery-frame--featured" : ""
-              } ${more ? "case-gallery-frame--more" : ""}`}
+              className={`group relative block h-[168px] cursor-pointer overflow-hidden rounded-xl border border-[color-mix(in_srgb,var(--case-ink)_14%,transparent)] bg-[color-mix(in_srgb,var(--case-accent)_8%,var(--case-bg))] p-0 max-[767px]:h-[120px] max-[767px]:rounded-[9px] [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>img]:object-top [&>img]:transition-transform [&>img]:duration-220 hover:[&>img]:scale-[1.035] focus-visible:[&>img]:scale-[1.035] ${
+                index === 0
+                  ? "col-span-2 h-[218px] max-[767px]:h-[190px] [&>img]:object-contain"
+                  : ""
+              } ${
+                more
+                  ? "after:absolute after:inset-0 after:bg-[rgba(14,14,17,0.58)] after:content-['']"
+                  : ""
+              }`}
               type="button"
               key={src}
               aria-label={
@@ -57,9 +66,11 @@ export default function ProjectGallery({
                 }
               />
               {more && (
-                <span className="case-gallery-more">
+                <span className="absolute inset-0 z-[1] flex flex-col items-center justify-center text-[2rem] font-[780] text-white">
                   +{images.length - 5}
-                  <small>View more</small>
+                  <small className="text-[0.73rem] font-[750] tracking-[0.04em]">
+                    View more
+                  </small>
                 </span>
               )}
             </button>
@@ -68,7 +79,7 @@ export default function ProjectGallery({
       </div>
       {expanded && images.length > 5 && (
         <button
-          className="case-gallery-less"
+          className="mt-[14px] ml-auto block cursor-pointer rounded-full border border-[color-mix(in_srgb,var(--case-ink)_25%,transparent)] bg-transparent px-[13px] py-[9px] text-[0.72rem] font-[750] text-[var(--case-ink)]"
           type="button"
           onClick={() => setExpanded(false)}
         >
@@ -76,7 +87,7 @@ export default function ProjectGallery({
         </button>
       )}
       <dialog
-        className="case-image-dialog"
+        className="fixed inset-0 m-auto max-h-[90vh] w-[min(94vw,1300px)] max-w-none overflow-visible border-0 bg-transparent p-0 backdrop:bg-[rgba(10,9,9,0.85)] backdrop:backdrop-blur-[8px]"
         ref={dialogRef}
         aria-label={`${name} screenshot preview`}
         onClose={() => setSelected(null)}
@@ -85,9 +96,10 @@ export default function ProjectGallery({
         }}
       >
         {selected !== null && (
-          <div className="case-image-dialog-content">
+          <div className="relative overflow-hidden rounded-[14px] bg-[#121212] [&>img]:block [&>img]:h-auto [&>img]:max-h-[88vh] [&>img]:w-full [&>img]:object-contain">
             <button
               type="button"
+              className="absolute top-[10px] right-[10px] z-[1] grid size-9 cursor-pointer place-items-center rounded-full border border-white/60 bg-[rgba(20,20,20,0.72)] text-white"
               onClick={() => dialogRef.current?.close()}
               aria-label="Close screenshot preview"
             >
