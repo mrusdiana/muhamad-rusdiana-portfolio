@@ -7096,3 +7096,30 @@ html[data-theme="dark"] .quick-actions-link > svg {
     font-size: 0.62rem;
   }
 }
+
+/* Desktop menu panel scales with the viewport height so every link and the
+   conversation button fit on one screen, even on short laptop displays. */
+@media (min-width: 768px) {
+  .menu-panel {
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: clamp(16px, 3vh, 24px) 24px;
+    scrollbar-width: none;
+  }
+  .menu-panel::-webkit-scrollbar {
+    display: none;
+  }
+  .panel-links {
+    gap: clamp(5px, 1vh, 9px);
+    margin: clamp(18px, 5vh, 56px) 0 clamp(14px, 3vh, 28px);
+  }
+  .panel-links a {
+    padding: clamp(10px, 1.9vh, 17px) 20px;
+    font-size: clamp(1rem, 2.3vh, 1.25rem);
+  }
+  .panel-cta {
+    flex: none;
+    padding: clamp(12px, 1.9vh, 16px) 22px;
+  }
+}
