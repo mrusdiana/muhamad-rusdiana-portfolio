@@ -273,7 +273,7 @@ const certificates = [
     category: "Fullstack development",
     logo: "/logos/hacktiv8.png",
     logoAlt: "Hacktiv8 logo",
-    url: "https://track.pstmrk.it/3s/students.hacktiv8.com%2Fcertificates%2F5f75b136-8d93-4c97-8805-8a7e54a869ce/KSBV/USLIAQ/AQ/bc1bd466-6669-44b0-8d5f-4baa89d202f5/6/zP55bs82U3",
+    url: "https://students.hacktiv8.com/certificates/988764f4-22d0-42e5-b96f-3cde2f5b238d",
   },
   {
     title: "JLPT N2 Certificate",
@@ -570,9 +570,11 @@ function AboutSection() {
         <div className="about-content">
           <p className="section-eyebrow reveal-item">About me</p>
           <h2 id="about-title" className="reveal-item">
-            I Build Reliable, User-Focused Applications.
-            <br />
-            <em>From Intuitive Interfaces to Dependable Backends.</em>
+            Building reliable
+            <br/>
+            <em>
+            user-focused applications from end to end.
+              </em> 
           </h2>
           <p className="about-summary reveal-item">
             I&apos;m a Fullstack JavaScript Developer experienced in building
@@ -700,8 +702,8 @@ function SkillsSection() {
                 filteredSkills.length > 24
                   ? "has-more"
                   : filteredSkills.length > 12
-                    ? "has-mobile-more"
-                    : ""
+                  ? "has-mobile-more"
+                  : ""
               }`}
             >
               <div

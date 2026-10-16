@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import IntroLoader from "@/components/IntroLoader";
 import QuickActions from "@/components/QuickActions";
 import { VisitorTracker } from "@/components/VisitorCount";
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >{`try{if(localStorage.getItem("portfolio-theme")==="dark"){document.documentElement.dataset.theme="dark";document.documentElement.style.colorScheme="dark"}}catch{}`}</Script>
       </head>
       <body className="min-h-full flex flex-col">
+        <IntroLoader />
         <VisitorTracker />
         {children}
         <QuickActions />
