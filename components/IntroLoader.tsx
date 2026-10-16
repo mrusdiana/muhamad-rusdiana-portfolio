@@ -5,7 +5,7 @@ import styles from "./IntroLoader.module.css";
 
 const STORAGE_KEY = "portfolio-intro-seen";
 const GREETINGS = ["Hello", "Halo", "こんにちは", "Hola", "Bonjour"];
-const GREETING_MS = 650;
+const GREETING_MS = 950;
 const NAME_MS = 1400;
 const EXIT_MS = 950;
 
@@ -137,10 +137,6 @@ export default function IntroLoader() {
         </button>
 
         <div className={styles.center}>
-          <div className={styles.kicker}>
-            <span className={styles.statusDot} />
-            {phase === "greeting" ? "Welcome" : "Fullstack Developer"}
-          </div>
           <div className={styles.wordMask}>
             <span
               key={word}
